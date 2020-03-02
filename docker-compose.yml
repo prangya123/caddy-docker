@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+   caddy:
+     image: prangya-caddy-web:1.0
+     build: ./caddy
+     ports:
+       - "8080:8080"
+
+
+#docker-compose build --pull --no-cache
+#docker-compose up
